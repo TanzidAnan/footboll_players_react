@@ -40,10 +40,10 @@ const HeroSection = () => {
     )
 
     return (
-        <div className='w-11/12 mx-auto'>
+        <div className=' mx-auto'>
             <div ref={sliderRef} className="keen-slider">
                 <div className="keen-slider__slide number-slide1">
-                    <img src="https://i.ibb.co.com/YW0zbVv/10380069-880126748669840-8933844486269932511-o.jpg" alt="" />
+                    <img src="https://i.ibb.co.com/gP35Nyt/332983259-3344842635782887-7779553938335661687-n.png" alt="" />
                 </div>
                 <div className="keen-slider__slide number-slide2">
                     <img src="https://i.ibb.co.com/mCbNySK/165162737-4679096642106146-3311128484245134838-n.jpg" alt="" />

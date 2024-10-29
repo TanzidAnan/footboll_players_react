@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 
 const Data = ({ data }) => {
     const {category,country,football_name,img,player_goal,position,price    } =data
