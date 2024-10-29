@@ -1,8 +1,9 @@
+import HeroSection from "../HeroSection/HeroSection";
 
 const Banner = () => {
     return (
         <div>
-            <h1>tanzd</h1>
+            <HeroSection></HeroSection>
         </div>
     );
 };

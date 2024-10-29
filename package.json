@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "for": "^0.0.1-dev.0",
+    "keen-slider": "^6.8.6",
     "localforage": "^1.10.0",
     "match-sorter": "^7.0.0",
     "only": "^0.0.2",
