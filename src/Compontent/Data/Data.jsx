@@ -12,7 +12,24 @@ const Data = ({ data }) => {
                 </figure>
                 <div className="card-body">
                     <h2 className="card-title">{football_name}</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <hr />
+                    <div className="flex justify-between items-center mt-3">
+                        <div>
+                        <p>{country}</p>
+                        </div>
+                       <div>
+                       <p className="text-gray-600"><small>{category}</small></p>
+                       </div>
+                    </div>
+                    <hr />
+                    <div className="flex justify-between items-center mt-4">
+                       <div>
+                       <p className="text-lime-800 font-bold">Gole: {player_goal}</p>
+                       </div>
+                       <div>
+                        <p>Price: $ {price}</p>
+                       </div>
+                    </div>
                     <div className="card-actions justify-end">
                         <button className="btn btn-primary">Buy Now</button>
                     </div>
