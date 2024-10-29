@@ -1,14 +1,17 @@
-import { useLoaderData } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const Datas = () => {
-    const fakeDatas = useLoaderData();
-    const { football_name} = fakeDatas
-    console.log(fakeDatas)
+    const [datas,setDatas] =useState([]);
+    useEffect(() =>{
+        fetch('https://raw.githubusercontent.com/TanzidAnan/retro-forum/refs/heads/main/fake.json')
+        .then(res => res.json())
+        .then(data => setDatas(data))
+    },[])
     return (
         <div>
-            <h2>Data: {fakeDatas.length}</h2>
+            <h2>Data:{datas.length}</h2>
             <div>
-                <p>{football_name}</p>
+                <p></p>
             </div>
 
         </div>

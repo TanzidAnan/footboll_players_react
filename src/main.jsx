@@ -6,12 +6,23 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Datas from './Compontent/Datas/Datas.jsx';
+import Header from './Compontent/Header/Header.jsx';
+import Banner from './Compontent/Banner/Banner.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    loader:() =>(`https://raw.githubusercontent.com/TanzidAnan/retro-forum/refs/heads/main/fake.json`),
-    element: <Datas></Datas>,
+    element: <Header></Header>,
+    children:[
+      {
+        path:'/',
+        element:<Banner></Banner>
+      },
+      {
+        path:'/data',
+        element:<Datas></Datas>
+      }
+    ]
   },
 ]);
 
